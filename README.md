@@ -1,7 +1,7 @@
 # FB_Spammer
 
 Prerequisites:<br />
-1. sudo pip install facebook<br />
+1. sudo pip install facebook-sdk<br />
 2. sudo pip install fb<br />
 3. sudo pip install facepy<br />
 
