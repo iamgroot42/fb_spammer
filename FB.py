@@ -26,7 +26,17 @@ token=str(raw_input("Enter token ID : "))
 graph = facebook.GraphAPI(token)
 go=str(raw_input("Enter event link : "))
 # go="https://www.facebook.com/events/1596690117274104/"
-mess=str(raw_input("Enter message : "))
+print "Enter message :"
+temp=str(raw_input())
+mess=""
+i=0
+while temp!="potato":
+  if(i==1):
+    mess=mess+'\n'+temp
+  else:
+    mess=temp
+    i=1 
+  temp=str(raw_input())
 # mess="Hurry! Register today before midnight at esya.iiitd.edu.in/pcj"
 # profile = graph.get_object("IEEE.org")
 # print profile['name']
