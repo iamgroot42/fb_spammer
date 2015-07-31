@@ -17,11 +17,4 @@ Instructions:<br />
 9. Press enter<br />
 
 Note:
-Enter each line you want to be posted on a new line.End the input by writing "potato" (without quotes) on a new line. <br />
-For example, if you want to post : <br/>
-a<br/>
-bc<br/>
-Then in the input,write : <br/>
-a (then press Enter) <br/>
-bc (then press Enter) </br>
-potato (then press Enter) <br/>
+Add \n to the message if you want it to be multi-line.
