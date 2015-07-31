@@ -16,5 +16,12 @@ Instructions:<br />
 8. Write any message to accompany the post<br />
 9. Press enter<br />
 
-Note:
-Add \n to the message if you want it to be multi-line.
+Note:<br />
+1.If you want to write :<br />
+  pq<br />
+  rs<br />
+  in the message,then type the following (when asked for 'Enter Message' while runnign the script) :<br />
+  pq (enter)<br />
+  rs (enter)<br />
+  potato<br />
+2.Uncomment the call to spam() [around line 60] to spam via comments [not recommended]  
