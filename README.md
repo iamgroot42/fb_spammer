@@ -20,8 +20,8 @@ Note:<br />
 1.If you want to write :<br />
   pq<br />
   rs<br />
-  in the message,then type the following (when asked for 'Enter Message' while runnign the script) :<br />
-  pq (enter)<br />
-  rs (enter)<br />
-  potato<br />
+  in the message,then type the following (when asked for 'Enter Message' while running the script) :<br />
+  pq (press enter)<br />
+  rs (press enter)<br />
+  potato (press enter)<br />
 2.Uncomment the call to spam() [around line 60] to spam via comments [not recommended]  
