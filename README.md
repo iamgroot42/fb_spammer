@@ -17,7 +17,7 @@ Instructions:<br />
 9. Press enter<br />
 
 Note:<br />
-1.Write "potato" (without quotes) on a new lien after your're done when prompted for a 'message'.Ex,If you want to write :<br />
+1.Write "potato" (without quotes) on a new line after your're done  ( when prompted for a 'message'. )Eg,If you want to write :<br />
   pq<br />
   rs<br />
   in the message,then type the following (when asked for 'Enter Message' while running the script) :<br />
