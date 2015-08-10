@@ -73,7 +73,7 @@ names3=["Heritageit","tiukolkata","techkriti","lpu.in","219812471388067","ApgShi
 "Science.IITJ","iitjsports","synchronicity.iitk",
 "groups/IITKanpurJEE/members/","IIT.Knp","aieseciitkgp","TSG.IITKharagpur","bclubkgp","ktj.iitkgp","ReachIITM","Shaastra","769552939828195","IITMandifacts",
 "212340022135020","roorkeerit","cogni.iitr","iitrms.in","bajasaeiitr","236028889879502","iitropar","iitbhumun","DelhiUniversityBeat",
-"DUNB.DELHI","IECROCKSTARS","lftdrc","782210305153678"]
+"DUNB.DELHI","IECROCKSTARS","lftdrc","782210305153678","brokenaperture","1414291988877893"]
 name=names+names2+names3
 #Names2,3 credits : Aashay Mittal
 names=set(names) 
@@ -88,7 +88,7 @@ for i in names:
   	print 'Done with '+j['name']
   	time.sleep(5)
   	suc+=1
-  	# spam(k,token,go) #Uncomment this line to spam on comments,not recommended 
+  	spam(k,token,go) #Uncomment this line to spam on comments,not recommended 
   except:
   	print "Error :("  
 
