@@ -88,6 +88,9 @@ for i in names:
   	print 'Done with '+j['name']
   	time.sleep(5)
   	suc+=1
+    if(suc>=100):
+      token=str(raw_input("Enter ANOTHER access token : "))
+      graph = facebook.GraphAPI(token)
   	# spam(k,token,go) #Uncomment this line to spam on comments,not recommended 
   except:
   	print "Error :("  
