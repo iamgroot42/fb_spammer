@@ -68,6 +68,7 @@ name=names+names2+names3
 #Names2,3 credits : Aashay Mittal
 names=set(names) 
 suc=0
+check=0
 print 'Spamming ',len(names),' pages'
 for i in names:
   try:
@@ -79,6 +80,9 @@ for i in names:
   	time.sleep(5)
   	suc+=1
   	if suc>=100:
+  		check=1
+  	if check==1:
+  		check=0	
   		token=str(raw_input("Enter ANOTHER access token (limit reached): "))
   		graph = facebook.GraphAPI(token)
   		print "Sleeping for 2 minutes "
