@@ -4,6 +4,8 @@ import facebook #sudo pip install facebook
 import fb  #sudo pip install fb 
 from facepy import GraphAPI #sudo pip install facepy
 
+#Potato
+
 #Reference : https://github.com/kirankaranth1/facebook-comment-spammer/blob/master/FB_commentSpam.py
 def spam(x,token,mess):
   facebook=fb.graph.api(token)
@@ -79,10 +81,9 @@ for i in names:
   	print 'Done with '+j['name']
   	time.sleep(5)
   	suc+=1
-  	if suc>=100:
+  	if suc>=100 and check==0:
   		check=1
   	if check==1:
-  		check=0	
   		token=str(raw_input("Enter ANOTHER access token (limit reached): "))
   		graph = facebook.GraphAPI(token)
   		print "Sleeping for 2 minutes "
