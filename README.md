@@ -17,16 +17,17 @@ Instructions for setup
 Using the Script
 ------------
 
-        Go to https://developers.facebook.com/tools/explorer
-        Click on 'Get Token', then select 'Get Access Token'
-        Check all the boxes (including extended permissions)
-        Copy the Access Token generated
-        Run 'python FB.py'
-        Past the access token
-        Write any message to accompany the post
-        Press enter
+        1. Go to https://developers.facebook.com/tools/explorer
+        2. Click on 'Get Token', then select 'Get Access Token'
+        3. Check all the boxes (including extended permissions)
+        4. Copy the Access Token generated
+        5. Run 'python FB.py'
+        6. Paste the access token
+        7. Write any message to accompany the post
 
-Note:<br />
+Note
+------------
+
 1.[Will be fixed soon] Write "potato" (without quotes) on a new line after you're done  ( when prompted for a 'message'. )Eg,If you want to write :<br />
   pq<br />
   rs<br />
