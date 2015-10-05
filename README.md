@@ -28,11 +28,11 @@ Using the Script
 Note
 ------------
 
-1.[Will be fixed soon] Write "potato" (without quotes) on a new line after you're done  ( when prompted for a 'message'. )Eg,If you want to write :<br />
+*  Write "potato" (without quotes) on a new line after you're done  ( when prompted for a 'message'. )Eg,If you want to write :<br />
   pq<br />
   rs<br />
   in the message,then type the following (when asked for 'Enter Message' while running the script) :<br />
   pq (press enter)<br />
   rs (press enter)<br />
   potato (press enter)<br />
-2.Uncomment the call to spam() [around line 60] to spam via comments [not recommended]  
+* Uncomment the call to spam() [around line 60] to spam via comments [not recommended]  
