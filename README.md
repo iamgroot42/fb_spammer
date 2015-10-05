@@ -1,20 +1,30 @@
 # FB_Spammer
 
-Prerequisites:<br />
-1. sudo pip install facebook-sdk<br />
-2. sudo pip install fb<br />
-3. sudo pip install facepy<br />
+Instructions for setup
+------------
 
-Instructions:<br />
-1. Go to https://developers.facebook.com/tools/explorer<br />
-2. Click on 'Get Token', then select 'Get Access Token'<br />
-3. Check all the boxes (including extended permissions)<br />
-4. Copy the Access Token generated<br />
-5. Run 'python FB.py'<br />
-6. Past the access token <br />
-7. Paste the event/image/page link<br />
-8. Write any message to accompany the post<br />
-9. Press enter<br />
+- Clone the project
+
+        git clone https://github.com/iamgroot42/FB_Spammer.git Spammer
+        cd Spammer
+        
+- Install following python packages:
+
+        pip install facebook-sdk
+        pip install fb
+        pip install facepy
+
+Using the Script
+------------
+
+        Go to https://developers.facebook.com/tools/explorer
+        Click on 'Get Token', then select 'Get Access Token'
+        Check all the boxes (including extended permissions)
+        Copy the Access Token generated
+        Run 'python FB.py'
+        Past the access token
+        Write any message to accompany the post
+        Press enter
 
 Note:<br />
 1.[Will be fixed soon] Write "potato" (without quotes) on a new line after you're done  ( when prompted for a 'message'. )Eg,If you want to write :<br />
