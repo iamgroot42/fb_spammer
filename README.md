@@ -8,11 +8,6 @@ Instructions for setup
         git clone https://github.com/iamgroot42/FB_Spammer.git Spammer
         cd Spammer
         
-- Install following python packages:
-
-        pip install facebook-sdk
-        pip install fb
-        pip install facepy
 
 Using the Script
 ------------
