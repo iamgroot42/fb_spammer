@@ -23,14 +23,12 @@ def read_names(path):
 	ret = []
 	for x in f:
 		ret.append(x.split('\n')[0])
-	shuffle(ret)
 	return ret
 
 
 def main_spam(mess, go, names, token):
-	total = 0
-	check = 0
 	suc = 0
+	check = 0
 	base_url = "https://graph.facebook.com/v2.7/"
 	suffix = "access_token=" + token
 	print 'Spamming ',len(names),' pages'
@@ -46,16 +44,13 @@ def main_spam(mess, go, names, token):
 	  		if suc >= 100 and check == 0:
 	  			check = 1
   			if check == 1:
-  				total += suc
-  				check = 0
-  				suc = 0
 			  	token = str(raw_input("Enter ANOTHER access token (limit reached): "))
   				suffix = "access_token=" + token
   				print "Sleeping for 2 minutes "
   				time.sleep(120)
   		except:
   			print "error"
-	return total
+	return suc
 
 
 if __name__ == "__main__":
