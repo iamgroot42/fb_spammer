@@ -2,7 +2,7 @@ import time
 import requests
 
 
-def inputz(token):
+def get_info(token):
 	go = str(raw_input("Enter event link : "))
 	print "Enter message :"
 	temp = str(raw_input())
@@ -27,8 +27,6 @@ def read_names(path):
 
 
 def main_spam(mess, go, names, token):
-	suc = 0
-	check = 0
 	base_url = "https://graph.facebook.com/v2.7/"
 	suffix = "access_token=" + token
 	print 'Spamming ',len(names),' pages'
@@ -38,23 +36,17 @@ def main_spam(mess, go, names, token):
 	  		k = j['id']
 	  		payload = {'message': mess, 'link': go}
 	  		k = requests.post(base_url + i + "/feed?" + suffix, data = payload)
+	  		print k.text
 	  		print 'Done with '+j['name']
-	  		time.sleep(5)
-	  		suc += 1
-	  		if suc >= 100 and check == 0:
-	  			check = 1
-  			if check == 1:
-			  	token = str(raw_input("Enter ANOTHER access token (limit reached): "))
-  				suffix = "access_token=" + token
-  				print "Sleeping for 2 minutes "
-  				time.sleep(120)
-  		except:
+	  		time.sleep(15)
+  		except Exception, e:
+  			print e
   			print "error"
-	return suc
 
 
 if __name__ == "__main__":
 	token = str(raw_input("Enter access token : "))
-	mess,go = inputz(token)
+	mess,go = get_info(token)
 	names = read_names("list")
-	print main_spam(mess, go, names, token)
+	main_spam(mess, go, names, token)
+	print "Spamming done!"
