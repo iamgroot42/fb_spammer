@@ -76,7 +76,6 @@ def post_on_these_pages(link, text, filename='target_list'):
 	target_ids = []
 	for target in f:
 		target_ids.append(target.rstrip())
-	print target_ids
 	for target in target_ids:
 		if post_to_this_page(target, link, text) is not None:
 			print "Spammed", target
