@@ -6,7 +6,7 @@ from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 import os
 import time
-
+import random
 
 driver = None
 
@@ -63,9 +63,10 @@ def post_to_this_page(target_id, link, text):
 		for sentence in text:
 			driver.find_element_by_id('uniqid_1').send_keys(sentence)
 			driver.find_element_by_id('uniqid_1').send_keys(Keys.RETURN)
+			time.sleep(3)
 		submit_button = get_specific_element('//button', 'Post')
 		submit_button.click()
-		return buttons
+		return target_id
 	except Exception, e:
 		time.sleep(10)
 		return None
@@ -76,10 +77,11 @@ def post_on_these_pages(link, text, filename='target_list'):
 	target_ids = []
 	for target in f:
 		target_ids.append(target.rstrip())
+	random.shuffle(target_ids)
 	for target in target_ids:
 		if post_to_this_page(target, link, text) is not None:
 			print "Spammed", target
-		time.sleep(5)
+		time.sleep(10)
 
 
 if __name__ == "__main__":
