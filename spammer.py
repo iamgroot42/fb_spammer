@@ -58,12 +58,12 @@ def post_to_this_page(target_id, link, text):
 		post_button.click()
 		driver.find_element_by_id("uniqid_1").clear()
 		driver.find_element_by_id('uniqid_1').send_keys(link)
-		time.sleep(1)
+		time.sleep(10)
 		driver.find_element_by_id("uniqid_1").clear()
 		for sentence in text:
 			driver.find_element_by_id('uniqid_1').send_keys(sentence)
 			driver.find_element_by_id('uniqid_1').send_keys(Keys.RETURN)
-			time.sleep(3)
+			time.sleep(5)
 		submit_button = get_specific_element('//button', 'Post')
 		submit_button.click()
 		return target_id
@@ -81,7 +81,7 @@ def post_on_these_pages(link, text, filename='target_list'):
 	for target in target_ids:
 		if post_to_this_page(target, link, text) is not None:
 			print "Spammed", target
-		time.sleep(10)
+		time.sleep(11)
 
 
 if __name__ == "__main__":
