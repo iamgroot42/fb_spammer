@@ -1,6 +1,6 @@
-# FB_Spammer
+# FB-Spammer
 
-A Facebook based spammer for event organizers.
+A Facebook based spammer for event organizers. Clone this repo, set it up and spam your event in various pages to increase it's reach. Easy to use, and very handy! Get, set, spam!
 
 ### Instructions for setup
 
